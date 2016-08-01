@@ -1,0 +1,21 @@
+{
+  "name": "log-server",
+  "version": "1.0.0",
+  "description": "Log server based on winstond",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["log", "server", "winston"],
+  "author": "Aleksey Danilevsky",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "fs-extra": "^0.30.0",
+    "winstond": "0.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexd1971/log-server.git"
+  }
+}
