@@ -1,7 +1,7 @@
 # Log server for node.js applications
 
 ## Description
-The server is based on [winstond]("https://github.com/winstonjs/winstond") project
+The server is based on [winstond](https://github.com/winstonjs/winstond) project
 
 The server accepts log-messages vie HTTP and saves in configured files.
 
