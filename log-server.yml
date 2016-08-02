@@ -1,0 +1,10 @@
+version: '2'
+services:
+  logs:
+    image: alexd1971/log-server
+    container_name: log-server
+    volumes:
+      - ./conf.js:/server/conf.js
+      - ./log:/log
+    ports:
+      - 4114:4114

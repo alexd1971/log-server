@@ -4,13 +4,15 @@ var winstond = require('winstond');
 const fse = require('fs-extra');
 const conf = require('./conf');
 
+process.stdout.write('Starting...');
+
 var http = winstond.http.createServer({
   services: ['collect', 'query', 'stream'],
   host: conf.host || 'localhost', 
   port: conf.port || 4114
 });
 
-var log_dir = ((conf.log_dir || './logs')+'/').replace(/\/\/$/, '/');
+var log_dir = ((conf.log_dir || '/log')+'/').replace(/\/\/$/, '/');
 fse.ensureDirSync(log_dir);
 
 if(conf.files){
@@ -31,3 +33,5 @@ else{
 }
 
 http.listen();
+
+process.stdout.write('done\n');
